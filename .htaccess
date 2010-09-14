@@ -1,0 +1,26 @@
+#optimisations maintenant qu'on est sur le nouveau serveur !
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresDefault "access plus 4 weeks"
+  ExpiresByType image/gif "access plus 4 weeks"
+  ExpiresByType image/png "access plus 4 weeks"
+  ExpiresByType image/jpeg "access plus 4 weeks"
+  ExpiresByType image/x-icon "access plus 4 weeks"
+  ExpiresByType text/css "access plus 4 weeks"
+</IfModule>
+
+#laisse les fichier dans le cache client le plus longtemps possible
+<IfModule mod_headers.c>
+  FileETag None
+  Header unset ETag
+  <FilesMatch "\.(ico|pdf|flv|jpg|jpeg|png|gif|js|css|swf)$">
+    Header set Cache-Control "public"
+  </FilesMatch>
+</IfModule>
+
+#compresse les fichers annexes au html
+<IfModule mod_deflate.c>
+  <FilesMatch "\.(js|css)$">
+    SetOutputFilter DEFLATE
+  </FilesMatch>
+</IfModule>
