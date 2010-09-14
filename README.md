@@ -1,5 +1,4 @@
-zCache
+TYPO
 ==================
 
-Optimisations sur le thème de base du sdz.
-Cache + images
+Nouvelle interface radicale et épurée pour le SdZ
