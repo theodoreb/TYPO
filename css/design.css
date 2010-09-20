@@ -74,7 +74,7 @@ form[action="/designs.html"] .centre {margin-top:1.5em;}
 #speedbarre {font:bold 1.077em Verdana,sans-serif;margin-top:1.5em;list-style:none;margin:0;padding:0;}
 #speedbarre li {display:inline-block;padding-right:1em;padding-top:1em;}
 #speedbarre li:before {content:'';}
-#logbox {background:white;position:absolute;top:-115px;padding:0em 2em 2em;border:2px solid #d3d7cf;border-top:0;right:0;z-index:10;}
+#logbox {background:white;position:absolute;top:-8.5em;padding:0em 2em 2em;border:2px solid #d3d7cf;height:8em;border-top:0;right:0;z-index:10;}
 #logbox:hover {border-color:#5c3566;top:0px;}
 #logbox:hover .new_mp a {margin-top:0;}
 #logbox div {display:inline-block;}
