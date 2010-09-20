@@ -30,13 +30,14 @@ ul li {list-style-type:none;}
 ul li:before {content:'– ';}
 
 /* répare les styles débiles et moches */
-#popup_menu_compte ul {background:white;border:1px solid #d3d7cf;display:none;direction:ltr;padding:1em 1.5em;position:absolute;list-style:none;}
+#popup_menu_compte ul {background:white;border:1px solid #d3d7cf;display:none;padding:1em 1em;position:absolute;list-style:none;}
+#popup_menu_compte li:before {content:'';}
 #mp_box {margin:0 0.5em;width:50px;height:50px;vertical-align:text-bottom;text-align:center;line-height:50px;font-weight:bold;}
 #mp_box a {border:1px solid #d3d7cf;display:block;width:100%;height:100%;}
 .new_mp a {background:#c00;color:white;margin-top:90px;}
 span.spoiler,span.spoiler_hidden,span.code,span.citation {display:block;font-weight:bold;margin-top:1.5em;}
 span.spoiler a,span.spoiler_hidden a,span.code a,span.citation a {color:black;}
-.rmq, .citation2 {font-family:georgia;font-style:italic;padding:2em 2.5em;border:2px solid #d3d7cf;}
+.infobulle span, .rmq, .citation2 {font-family:georgia;font-style:italic;padding:2em 2.5em;border:2px solid #d3d7cf;}
 .rmq {border-width:0 0 0 2px;}
 .citation2 .citation2 {border-width:1px;}
 .spoiler2, .spoiler2_hidden {background:#eeeeec;}
@@ -124,7 +125,7 @@ td img {vertical-align:text-bottom;}
 .message_edite {margin:1.5em 2.5em 0;font-style:italic;font-size:0.769em;}
 .signature {font-size:0.769em;opacity:0.3;width:470px;height:100px;margin-top:20px;overflow:hidden;}
 #rep_rapide {text-align:center;}
-#rep_rapide textarea {direction:ltr;position:relative;z-index:10;margin-top:-1.5em;width:78em;}
+#rep_rapide textarea {position:relative;z-index:10;margin-top:-2em;}
 .boutons_saut_forum {text-align:right;}
 .boutons_saut_forum a {float:none;}
 .btn_supprimer_msg {text-align:right;}
@@ -141,8 +142,9 @@ input.notif {vertical-align:text-bottom;}
 
 /* formulaires */
 input[type=text] {border:1px solid #888a85;padding:0.2em;}
-textarea {border:1px solid #888a85;display:block;height:25em;margin:0 auto 1.5em;padding:1.5em;width:100%;}
-.zform textarea {height:42em;}
+textarea {border:1px solid #888a85;display:block;font-size:13px;height:25em;margin:0 auto 1.5em;padding:1.5em;width:72em;}
+.zform textarea {height:42em;width:72em;}
+#text_notepad textarea {margin:0;width:11em;}
 
 /* tutos */
 .onglets_tutos ul {margin:0;padding:0;text-align:center;}
@@ -166,9 +168,15 @@ img[src^='uploads/fr/cat'] {vertical-align:middle;}
 /* profil */
 #message_1 {max-width:40em;margin:4em auto;}
 #pas_attendre {margin-top:1.5em;text-align:center;}
-.ensemble_membre .boutons_box {width:60%;float:left;}
-.ensemble_membre .button_box {display:inline-block;text-align:center;}
-.ensemble_membre .sections_options {float:right;}
+.boutons_box {width:58%;float:left;}
+.button_box {display:inline-block;text-align:center;}
+.sections_options {float:right;width:42%;}
+
+/* admin */
+.infobulle {position:relative;}
+.infobulle span {background:white;display:none;position:absolute;top:2em;left:0;z-index:200;width:20em;}
+.infobulle:hover span {display:block;}
+
 
 
 
@@ -183,6 +191,7 @@ img[src^='uploads/fr/cat'] {vertical-align:middle;}
 #texte_smilies,.smilies_zform input,.smilies_zform a[href^=tutoriel],
 #zform_height_moins_texte,#zform_height_plus_texte,
 h1 + h2 + br + .options_forum,h1 + .options_forum,
+form[action="forum-81.html"],
 .liste_cat + .btn_supprimer_msg,
 .infos_membre .gauche,
 #menu_boutique,legend
