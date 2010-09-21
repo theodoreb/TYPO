@@ -58,10 +58,11 @@ form[action="/designs.html"] .centre {margin-top:1.5em;}
 .info_bonne_reponse,.sujet_resolu {border:2px solid #4e9a06;}
 .info_bonne_reponse {margin-bottom:1.5em;}
 .question {border-color:#4e9a06;color:#4e9a06;}
-.erreur2, .erreur {border-color:#c00;color:#c00;}
+.erreur2, .erreur {border-color:#c00;color:#a40000;}
 .erreur2 {color:#a40000;}
-.attention {border-color:#f57900;color:#f57900;}
-.information {border-color:#3465a4;color:#3465a4;}
+.attention {border-color:#f57900;color:#ce5c00;}
+.information {border-color:#3465a4;color:#204a87;}
+.rmq a {text-decoration:underline;}
 
 /* mise en page */
 #top,#header,.contenu,#footer {margin:auto;width:75em;}
@@ -143,6 +144,7 @@ input.notif {vertical-align:text-bottom;}
 /* formulaires */
 input[type=text] {border:1px solid #888a85;padding:0.2em;}
 textarea {border:1px solid #888a85;display:block;font-size:13px;height:25em;margin:0 auto 1.5em;padding:1.5em;width:72em;}
+textarea.petit_textarea {height:5em;}
 .zform textarea {height:42em;width:72em;}
 #text_notepad textarea {margin:0;width:11em;}
 
@@ -176,6 +178,7 @@ img[src^='uploads/fr/cat'] {vertical-align:middle;}
 .infobulle {position:relative;}
 .infobulle span {background:white;display:none;position:absolute;top:2em;left:0;z-index:200;width:20em;}
 .infobulle:hover span {display:block;}
+#commentaires_validateurs textarea {width:65em;}
 
 
 
