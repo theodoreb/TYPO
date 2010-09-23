@@ -295,7 +295,7 @@ input[name=send]:active {
 
 
 .code pre {color:#d3d7cf;}
-span.code2 {font-family:monospace;font-style:italic;margin-right:-1.3ex;}
+span.code2 {font-family:monospace;font-style:italic;}
 div.code2, div.code2 table {background:#2E3436;margin:0;}
 .ln-xtra { background-color: #555753 }
 .code2 table {border:0;margin:0;}
