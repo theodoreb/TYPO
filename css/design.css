@@ -159,6 +159,7 @@ textarea.petit_textarea {height:5em;}
 .infobox.taille_news {clear:none;}
 .wrap_sections_profil tr {border:0;}
 .wrap_sections_profil td {vertical-align:top;}
+form[action='news-77.html'] .scrollable {font-size:0.9em;}
 
 .bouton_tuto {display:inline-block;float:none;border:2px solid #d3d7cf;padding:0 2em 1em;margin:0 0 1.5em 1.6em;width:12em;vertical-align:text-top;text-align:center;}
 .bouton_tuto h3 {text-align:left;}
@@ -181,7 +182,6 @@ img[src^='uploads/fr/cat'] {vertical-align:middle;}
 .infobulle span {background:white;display:none;position:absolute;top:2em;left:0;z-index:200;width:20em;}
 .infobulle:hover span {display:block;}
 #commentaires_validateurs textarea {width:65em;}
-
 
 
 
@@ -460,6 +460,11 @@ span.code2 .il { color: #ce5c00 } /* Literal.Number.Integer.Long */
 .flux_popup ul{list-style: none;}
 .flux_popup a.lien_flux{color:#2677C9;text-decoration:none;}
 .selecteur_flux{margin-top: 5px;}
+
+.scrollable {overflow:auto;height:40em;} 
+.flot_droite {margin-left:1em;}
+.flot_gauche {margin-right:1em;}
+.centre {display:block;}
 
 .expandable
 {
