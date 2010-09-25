@@ -200,7 +200,8 @@ form[action="forum-81.html"],
 .liste_cat + .btn_supprimer_msg,
 .infos_membre .gauche,
 #menu_boutique,legend,
-#voir_tags
+#voir_tags,
+#text1_smilies
 {display:none;}
 /* signatures à la con */
 .signature img[src$=gif] {display:none;}
@@ -217,7 +218,7 @@ input[type=submit],input[type=button],input[name=send],input[name=plus_options],
   text-decoration: none;
   padding: .2em 1em .257em;
   text-shadow: 0 1px 1px rgba(0,0,0,.3);
-  -webkit-border-radius: .5 1.5emem; 
+  -webkit-border-radius: .5 1.5emem;
   -moz-border-radius: .5em;
   border-radius: .5em;
   -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
@@ -295,7 +296,8 @@ input[name=send]:active {
 
 
 .code pre {color:#d3d7cf;}
-span.code2 {font-family:monospace;font-style:italic;}
+span.code2 {font-family:monospace;font-style:italic;margin-right:-1.3ex;}
+span.code2.console {margin-right:0;}
 div.code2, div.code2 table {background:#2E3436;margin:0;}
 .ln-xtra { background-color: #555753 }
 .code2 table {border:0;margin:0;}
@@ -461,7 +463,7 @@ span.code2 .il { color: #ce5c00 } /* Literal.Number.Integer.Long */
 .flux_popup a.lien_flux{color:#2677C9;text-decoration:none;}
 .selecteur_flux{margin-top: 5px;}
 
-.scrollable {overflow:auto;height:40em;} 
+.scrollable {overflow:auto;height:40em;}
 .flot_droite {margin-left:1em;}
 .flot_gauche {margin-right:1em;}
 
@@ -508,6 +510,81 @@ span.code2 .il { color: #ce5c00 } /* Literal.Number.Integer.Long */
     top: 4px;
 }
 
+#corps ul.tree, #corps ul.tree ul {
+  list-style-image: none
+}
+
+ul.tree, ul.tree * {
+    list-style-type: none;
+    margin: 0;
+    padding: 0 0 5px 0;
+}
+
+ul.tree img.arrow {
+    padding: 2px 0 0 0;
+    border: 0;
+    width: 20px;
+}
+
+ul.tree li {
+    padding: 4px 0 0 0;
+    clear: both;
+}
+ul.tree li:before {content:'';}
+
+ul.tree li ul {
+    padding: 0 0 0 20px;
+    margin: 0;
+}
+
+ul.tree label {
+    cursor: pointer;
+    font-weight: bold;
+    float: left;
+    display: inline;
+    white-space: nowrap;
+}
+
+ul.tree label.hover {
+    color: red;
+}
+
+ul.tree li .arrow {
+    width: 16px;
+    height: 16px;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    float: left;
+    background: transparent no-repeat 0 3px;
+}
+
+ul.tree li .collapsed {
+    background-image: url('../images/collapsed.gif');
+}
+
+ul.tree li .expanded {
+    background-image: url('../images/expanded.gif');
+}
+
+ul.tree li .checkbox {
+    width: 16px;
+    height: 16px;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    float: left;
+    background: transparent no-repeat 0 2px;
+    background-image: url('../images/check0.gif');
+}
+
+ul.tree li .checked {
+    background-image: url('../images/check2.gif');
+}
+
+ul.tree li .half_checked {
+    background-image: url('../images/check1.gif');
+}
 
 /*
 * jQuery UI CSS Framework
@@ -813,7 +890,7 @@ span.code2 .il { color: #ce5c00 } /* Literal.Number.Integer.Long */
 .ui-datepicker .ui-datepicker-title { margin: 0 2.3em; line-height: 1.8em; text-align: center; }
 .ui-datepicker .ui-datepicker-title select { float:left; font-size:1em; margin:1px 0; }
 .ui-datepicker select.ui-datepicker-month-year {width: 100%;}
-.ui-datepicker select.ui-datepicker-month, 
+.ui-datepicker select.ui-datepicker-month,
 .ui-datepicker select.ui-datepicker-year { width: 49%;}
 .ui-datepicker .ui-datepicker-title select.ui-datepicker-year { float: right; }
 .ui-datepicker table {width: 100%; font-size: .9em; border-collapse: collapse; margin:0 0 .4em; }
@@ -864,7 +941,7 @@ span.code2 .il { color: #ce5c00 } /* Literal.Number.Integer.Long */
 ----------------------------------*/
 .ui-dialog { position: relative; padding: .2em; width: 300px; }
 .ui-dialog .ui-dialog-titlebar { padding: .5em .3em .3em 1em; position: relative;  }
-.ui-dialog .ui-dialog-title { float: left; margin: .1em 0 .2em; } 
+.ui-dialog .ui-dialog-title { float: left; margin: .1em 0 .2em; }
 .ui-dialog .ui-dialog-titlebar-close { position: absolute; right: .3em; top: 50%; width: 19px; margin: -10px 0 0 0; padding: 1px; height: 18px; }
 .ui-dialog .ui-dialog-titlebar-close span { display: block; margin: 1px; }
 .ui-dialog .ui-dialog-titlebar-close:hover, .ui-dialog .ui-dialog-titlebar-close:focus { padding: 0; }
