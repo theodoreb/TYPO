@@ -183,10 +183,23 @@ img[src^='uploads/fr/cat'] {vertical-align:middle;}
 .infobulle:hover span {display:block;}
 #commentaires_validateurs textarea {width:65em;}
 
-
+/* la speedbarre kikoulol */
+#speedbar_expand {background:white;border:2px solid red;width:100%;position:absolute;top:50px;z-index:5000;}
+#speedbar_expand .menuh_content {margin:1em;}
+.menuh_princi_col, .menuhcattuto, .menu_prim {float:left;}
+#speedbar_expand dl {font-size:0.8em;}
+#speedbar_expand dd {margin-left:10px;}
+.menuh_princi_col {width:300px;}
+.menu_prim {width:300px;}
+.menu_princi {width:600px;}
+.button_all_forums {float:left;width:100%;text-align:center;display:block;margin-bottom:1em;font-size:0.8em;color:red;}
+/*#menuh_etude, #menuh_boutique {display:none!important;height:0;width:0;overflow:hidden;}*/
 
 /* MOI J'AIME */
 #acces_rapide,#footer,#top,
+#speedbar_expand .ico,
+.menu_ters,
+#menuh_etude, #menuh_boutique,
 .droite.printnone,
 .boutons_saut_forum form,
 #publicite_banniere,
